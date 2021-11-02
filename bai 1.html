@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<script>
+    function equationOfDegree1(a, b) {
+        if (a === 0 && b === 0){
+            alert("The equation has infinitely many solutions");
+        }
+        else if (a !== 0 && b === 0){
+            alert("The equation that has a solution is x = 0");
+        }
+        else if (a === 0 && b !== 0){
+            alert("The equation has no solution");
+        }
+        else {
+            alert("valid equation x = " + (-b/a));
+        }
+    }
+      equationOfDegree1(5,8);
+</script>
+</body>
+</html>

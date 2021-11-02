@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+    function findVowel(string) {
+        let vowel = ["a", "e", "i", "o", "u"];
+        let count = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (vowel.indexOf(string[i]) !== -1) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return false;
+        }
+    }
+
+    let string = prompt("Enter a string :");
+    findVowel(string);
+    alert(" number of vowel characters  " + " "  + findVowel(string));
+</script>
+</body>
+</html>

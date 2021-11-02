@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<script>
+    let numbers = parseInt(prompt("Enter the number of array elements: "));
+    let intNumber = new Array(numbers);
+    for(let i=0;i<intNumber.length;i++){
+        intNumber[i] = Math.round(Math.random()*5+1);
+    }
+    document.write("element in array : " + intNumber + "<br>");
+    function findElementIndexArray(element,arr){
+        let check = false;
+        for (let i = 0; i < arr.length; i++) {
+            if(element === arr[i] ){
+                check = true;
+                return document.write("Vị trí của "+element+" in the array is: " +i) ;
+            }
+
+        }
+        if(!check){
+            alert("Element: " +element +"is not in the array ")
+        }
+    }
+    findElementIndexArray(3,intNumber);
+
+    let number = +prompt("Enter the number to check: ")
+    function checkNumberInArray(number,arr){
+        let check = false;
+        for (let i = 0; i < arr.length; i++) {
+            if(number === arr[i] ){
+                check = true;
+                return document.write("The element just entered " +number + " of array ") ;
+            }
+        }
+        if(!check){
+            document.write(" The element just entered " +number + " is not in the array ")
+        }
+    }
+    checkNumberInArray(number,intNumber);
+</script>
+</body>
+</html>
